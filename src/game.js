@@ -6,12 +6,13 @@ function sortedIndex(value, array) {
     let high = array.length
     while (low < high) {
         let mid = (low + high) >>> 1
-        if (array[mid] < value) low = mid + 1
-        else high = mid
+      if (array[mid] < value)
+        low = mid + 1
+      else 
+        high = mid
     }
     return low
 }
-
 
 export function insert(element, array) {
   const indexToInsert = sortedIndex(element, array)
@@ -92,7 +93,6 @@ export const NoThanks = {
          )
       }
       const newTableCard = deck.pop()
-      //TODO: separate public and private info
       return {
         ...G,
         tableTokens: 0,
