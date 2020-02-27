@@ -41,7 +41,8 @@ const NoThanks = {
     noThanks
   },
   endIf,
-  playerView
+  playerView,
+  name: "nothanks"
 };
 
 export default NoThanks;
